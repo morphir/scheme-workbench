@@ -1,0 +1,28 @@
+scheme-workbench is a minimalistic repl intented to get rid of the emacs-dependencie that many newcomers face
+when entering lisp ground.
+
+It offers 4 imperative features for lisp coding:
+
+1. Parenthesis highligting - makes it easy to properly balance left with right parens.
+2. Autoindent according to the lisp standard.
+3. Session namespace - when create new bindings, you can remind your self of their names 
+4. When you are finished honing your closure, save it to a file. 
+
+example:
+
+in [1]:(define (fact x)
+    ..:  (if (= x 0) 1
+    ..:      (* x (fact (- x 1)))))
+
+in [2]:(fact 10)
+3628800
+
+in [3]:,ns
+fact
+
+in [4]:(define x 1)
+
+in [5]:,ns
+fact   x
+
+in [6]:,s fact my-math.scm
