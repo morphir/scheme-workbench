@@ -1,0 +1,35 @@
+typedef struct {
+ int y 0;
+ int x 0;
+  }buffer ;
+
+
+1. make buffer
+
+   start repl-loop
+   
+   create edit_buffer;
+   
+   while(getch() != NULL)
+   {
+     buffer.x++;
+   }
+   
+   while(getch() == '\0x0D')//the enter key
+   {
+     buffer.y++;
+   }
+   
+   if input_char=='enter' and linebuffer==null then exit buffer_loop
+   
+2. read buffer
+   
+   autoindent
+   
+   if(getch() == ')')
+   {
+     
+   }
+   
+   
+ 
